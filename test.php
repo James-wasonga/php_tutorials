@@ -4,5 +4,5 @@
         $total = $price + ($price * $tax);
         echo "$total"; 
     }
-    calc(42);	
+    calc(42,34);	
     ?>
