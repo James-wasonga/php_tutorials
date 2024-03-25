@@ -28,7 +28,7 @@ $result = mysqli_query($connect,"select * from Students");
             <tr>
                 <td><?php echo $row['AdmNo']?></td>
                 <td><?php echo $row['Name']?></td>
-                <td><?php echo $row['age']?></td>
+                <td><?php echo $row['age']?></td>   
                 <td><?php echo $row['Program']?></td>
 
         </tr>

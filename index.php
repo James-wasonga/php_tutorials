@@ -8,5 +8,6 @@
 <body>
     <h1>You are logged in as <?php echo $_COOKIE['fullname'];?></h1>
     <a href="logout.php">log out</a>
+
 </body>
 </html>

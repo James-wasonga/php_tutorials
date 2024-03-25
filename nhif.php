@@ -11,7 +11,7 @@
 		return $pension;
 	}
 	
-	$deductions=$nssf+$nhif+pension();		//total deductions from the salary
+	$totaldeductions=$nssf+$nhif+pension();		//total deductions from the salary
 	
 	echo $totaldeductions;
 ?>
