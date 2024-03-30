@@ -37,5 +37,6 @@ while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
     </table>
 <button><a href="labwork.html">Add suggestion</a></button>
 <?php
+
 mysqli_close($con);
 ?>
