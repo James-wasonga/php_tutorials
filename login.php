@@ -12,7 +12,7 @@ session_start();
 $con = mysqli_connect("localhost","root","");
 mysqli_select_db($con,"suggestion");
 
-$result = mysqli_query($con, "select * from labwork");
+
 
 // while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
 //     echo $row['Name'];
@@ -20,18 +20,22 @@ $result = mysqli_query($con, "select * from labwork");
     
 // }
 if(isset($_POST['name'])){
-  $name = $_POST['Name'];
+  $name = $_POST['name'];
   $email = $_POST['email'];
-
+  $result = mysqli_query($con, "select * from labwork where Name = '$name' and Email = '$email'");
   if(mysqli_num_rows($result)>0){
    $row = mysqli_fetch_assoc($result);
    
    $_SESSION['name'] = $row['Name'];
-   $_SESSION['email'] = $_row['Email'];
+   $_SESSION['email'] = $row['Email'];
 
   }
 
+  echo $row['Name'];
 }
+
+
+
 ?>
 </body>
 </html>
