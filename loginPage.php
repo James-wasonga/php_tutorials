@@ -31,7 +31,7 @@ $connect = mysqli_connect("localhost","root","");
         $result = mysqli_fetch_assoc($row);
        $_SESSION['username'] = $result['Username'];
        $_SESSION['password'] = $result['Password'];
-      
+       $_SESSION['fullname'] = $result['FullName'];
 
 
 
